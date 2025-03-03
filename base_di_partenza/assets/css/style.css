@@ -221,38 +221,39 @@ footer a {
 }
 
 
-@media screen and (min-width: 576px) and (orientation: potrait) {
+@media screen and (min-width: 576px) {
 
     /* layout per mobile */
-    header nav {
+    header nav li {
         display: inline;
 
     }
 
-
-    .video,
-    .novita,
-    .articolo {
-        max-width: 100%;
+    table {
         margin: 0 auto;
+        width: 80%;
+
+
     }
+
+
 
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
     /* layout per tablet */
     header div {
         display: inline-block;
         width: 40%;
-        text-align: left;
+        text-align: center;
     }
 
     header nav {
         display: inline-block;
         width: 58%;
-        text-align: right;
+        text-align: center;
     }
 }
 
@@ -260,4 +261,6 @@ footer a {
 
 @media screen and (min-width: 1200px) {
     /* layout desktop */
+
+
 }
