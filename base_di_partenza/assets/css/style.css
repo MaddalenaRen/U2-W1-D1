@@ -221,7 +221,7 @@ footer a {
 }
 
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 500px) {
 
     /* layout per mobile */
     header nav li {
@@ -231,36 +231,184 @@ footer a {
 
     table {
         margin: 0 auto;
-        width: 80%;
+        margin-left: 0;
+        width: 90%;
+
 
 
     }
 
+    #badge {
+        border: solid 3px, fuchsia;
+        width: 83px;
+        height: 83px;
+    }
+
+    #badge img {
+        border: solid 4px, rgb(20, 136, 214);
+    }
 
 
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 750px) {
 
     /* layout per tablet */
-    header div {
-        display: inline-block;
-        width: 40%;
-        text-align: center;
+    body {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+
     }
+
 
     header nav {
         display: inline-block;
         width: 58%;
         text-align: center;
     }
+
+    #first-h2 {
+        font-weight: bold;
+    }
+
+    table {
+        width: 65%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    input {
+        width: 400px;
+        height: 30px;
+    }
+
+    button {
+        padding: 10px 10px;
+    }
+
+    footer p {
+        font-size: medium;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    address {
+        margin-top: 15px;
+        font-size: medium;
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+    }
 }
 
 
 
 @media screen and (min-width: 1200px) {
+
     /* layout desktop */
+    header div img {
+        display: inline-block;
 
+        float: left;
+    }
 
+    header p {
+        display: inline-block;
+    }
+
+    header nav {
+        display: inline-block;
+
+    }
+
+    #first-h2 {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    iframe {
+        display: inline-block;
+        width: 50%;
+        height: 225px;
+        margin-bottom: -4em;
+    }
+
+    section {
+        display: inline-block;
+        width: 49%;
+        padding: 3em;
+        border-radius: 20px;
+
+    }
+
+    aside div {
+        display: inline-block;
+        width: 33.333%;
+        height: 120px;
+        margin-inline: -2px;
+    }
+
+    footer {
+        height: 160px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: x-large;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    address {
+        margin-top: 15px;
+        font-size: large;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+
+@media print {
+    body {
+        font-size: 24px;
+        padding: 0;
+        background-image: none;
+    }
+
+    main {
+        box-shadow: none;
+        margin: 0;
+    }
+
+    thead tr {
+        background-color: #d3d3d3;
+        color: black;
+    }
+
+    thead tr,
+    tbody tr {
+        border-bottom: 1px solid #666;
+    }
+
+    header,
+    article section,
+    iframe,
+    aside,
+    footer,
+    .social,
+    .toTop {
+        display: none;
+    }
 }
