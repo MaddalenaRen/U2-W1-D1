@@ -20,6 +20,10 @@ hr {
     display: none;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 /* rimuove l'elemento */
 
 /* HEADER */
